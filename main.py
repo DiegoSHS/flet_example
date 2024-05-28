@@ -27,11 +27,13 @@ def main(page: ft.Page):
             page.update()
             time.sleep(1)
 
-    def minus_click():
+    def minus_click(e):
+        print(e)
         txt_number.value = str(int(txt_number.value) - 1)
         page.update()
 
-    def plus_click():
+    def plus_click(e):
+        print(e)
         txt_number.value = str(int(txt_number.value) + 1)
         page.update()
 
